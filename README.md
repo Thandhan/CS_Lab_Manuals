@@ -1,5 +1,5 @@
-# CS_Lab_Manuals
-CBCS Scheme Lab Manuals
+# VTU CS Lab Manuals
+Based on CBCS Scheme
 
 - **15CSL38** - [Data Structure Lab Programs](/3rd_Sem/Data_Structure_Lab)
 - **15CSL48** - [Microprocessor and Microcontroller Lab Programs](/4th_Sem/Microprocessor_Lab)
