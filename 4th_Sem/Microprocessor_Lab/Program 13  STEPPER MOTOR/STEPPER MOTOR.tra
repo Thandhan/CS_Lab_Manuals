@@ -1,0 +1,22 @@
+*** Creating Trace Output File 'STEPPER MOTOR.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '"startup.o"'
+### List of Objects: adding '"stepper motor.o"'
+### List of Objects: adding '"..\LIBRARY\CM-ARM7.lib"'
+### ADS-LD Command completed:
+--device DARMP "startup.o" "stepper motor.o" "..\LIBRARY\CM-ARM7.lib" --feedback "STEPPER MOTOR.fed" 
+--strict --scatter "STEPPER MOTOR.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\STEPPER MOTOR.map" -o "STEPPER MOTOR.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: 'STEPPER MOTOR.axf'
+### ADS-LD Command File: 'STEPPER MOTOR.lnp'
+### Checking for dirty Components...
+### Creating CmdFile 'STEPPER MOTOR.lnp', Handle=0x00000338
+### Writing '.lnp' file
+### ADS-LD Command file 'STEPPER MOTOR.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

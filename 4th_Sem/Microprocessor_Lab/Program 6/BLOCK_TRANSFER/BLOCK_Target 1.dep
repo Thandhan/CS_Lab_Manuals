@@ -1,0 +1,2 @@
+Dependencies for Project 'BLOCK', Target 'Target 1': (DO NOT MODIFY !)
+F (.\BLOCK.asm)(0x5943749B)(--device DARMP --pd "__EVAL SETA 1" -g --apcs=interwork -I "C:\Keil\ARM\INC\Philips" --list "BLOCK.lst" --xref -o "BLOCK.o")

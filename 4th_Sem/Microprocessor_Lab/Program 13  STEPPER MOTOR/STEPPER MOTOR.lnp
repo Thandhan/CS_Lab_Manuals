@@ -1,0 +1,5 @@
+--device DARMP "startup.o" "stepper motor.o" "..\LIBRARY\CM-ARM7.lib" --feedback "STEPPER MOTOR.fed" 
+--strict --scatter "STEPPER MOTOR.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\STEPPER MOTOR.map" -o "STEPPER MOTOR.axf"

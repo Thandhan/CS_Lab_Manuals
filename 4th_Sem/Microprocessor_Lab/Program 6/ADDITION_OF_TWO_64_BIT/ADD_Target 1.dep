@@ -1,0 +1,2 @@
+Dependencies for Project 'ADD', Target 'Target 1': (DO NOT MODIFY !)
+F (.\ADD.ASM)(0x58D511E9)(--device DARMP --pd "__EVAL SETA 1" -g --apcs=interwork -I "C:\Keil\ARM\INC\Philips" --list "ADD.lst" --xref -o "ADD.o")

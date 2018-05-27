@@ -1,0 +1,7 @@
+Dependencies for Project 'STEPPER MOTOR', Target 'Target 1': (DO NOT MODIFY !)
+F (.\Startup.s)(0x4A02A570)(--device DARMP -g --apcs=interwork -I "C:\Keil\ARM\INC\Philips" --list "Startup.lst" --xref -o "Startup.o")
+F (.\STEPPER MOTOR.C)(0x586E66F5)(--feedback "STEPPER MOTOR.fed" -c --device DARMP -g -O0 --apcs=interwork -I "C:\Keil\ARM\INC\Philips" -o "stepper motor.o" --omf_browse "stepper motor.crf" --depend "stepper motor.d")
+I (CM-ARM7.H)(0x586E6487)
+I (C:\Keil\ARM\INC\Philips\LPC214x.H)(0x4A02A636)
+I (C:\Keil\ARM\RV31\INC\STRING.H)(0x4A02A792)
+F (..\LIBRARY\CM-ARM7.lib)(0x586E688C)()

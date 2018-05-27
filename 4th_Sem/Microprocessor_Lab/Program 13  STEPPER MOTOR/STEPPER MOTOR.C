@@ -1,0 +1,8 @@
+#include "CM-ARM7.H"
+
+int main()
+{
+  INITIALIZE_MODULE        (STEPPER_MOTOR);
+  CLOCK_WISE_DIRECTION     (200,10);
+  ANTI_CLOCK_WISE_DIRECTION(200,10);
+}

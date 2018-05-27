@@ -1,0 +1,124 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             SOURCE, DATA, READONLY
+    2 00000000 54 68 69 
+              73 20 50 
+              72 6F 67 
+              72 61 6D 
+              20 69 73 
+              20 66 6F 
+              72 20 74 
+              6F 20 54 
+              72 61 6E 
+              73 66 65 
+              72 20 61 
+              20 62 6C 
+              6F 63 6B 
+              20 6F 66 
+              20 64 61 
+              74 61 20 
+              66 72 6F 
+              6D 20 52 
+              45 41 44 
+              20 4F 4E 
+              4C 59 20 
+              4D 45 4D 
+              4F 52 59 
+              20 74 6F 
+              20 52 45 
+              41 44 20 
+              57 52 49 
+              54 45 20 
+              4D 45 4D 
+              4F 52 59 
+              00               DCB              "This Program is for to Transfe
+r a block of data from READ ONLY MEMORY to READ WRITE MEMORY",0
+    3 0000005B         
+    4 0000005B                 AREA             DESTINATION, DATA, READWRITE
+    5 00000000         
+    6 00000000                 AREA             Program, CODE, READONLY
+    7 00000000         
+    8 00000000                 ENTRY
+    9 00000000         
+   10 00000000 E59F0014        LDR              R0,=SOURCE  ;load the address o
+                                                            f source
+   11 00000004 E59F1014        LDR              R1,=DESTINATION ;load the addre
+                                                            ss of destination
+   12 00000008 E4D03001 
+                       LOOP1   LDRB             R3,[R0],#1
+   13 0000000C E4C13001        STRB             R3,[R1],#1
+   14 00000010 E3500000        CMP              R0,#00
+   15 00000014 1AFFFFFB        BNE              LOOP1
+   16 00000018 EAFFFFFE 
+                       LOOP2   B                LOOP2
+   17 0000001C                 END
+              00000000 
+              00000000 
+Command Line: --debug --xref --device=DARMP --apcs=interwork -oBLOCK.o -IC:\Kei
+l\ARM\INC\Philips --predefine="__EVAL SETA 1" --list=BLOCK.lst BLOCK.asm
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+SOURCE 00000000
+
+Symbol: SOURCE
+   Definitions
+      At line 1 in file BLOCK.asm
+   Uses
+      At line 10 in file BLOCK.asm
+Comment: SOURCE used once
+1 symbol
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+DESTINATION 00000000
+
+Symbol: DESTINATION
+   Definitions
+      At line 4 in file BLOCK.asm
+   Uses
+      At line 11 in file BLOCK.asm
+Comment: DESTINATION used once
+1 symbol
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+LOOP1 00000008
+
+Symbol: LOOP1
+   Definitions
+      At line 12 in file BLOCK.asm
+   Uses
+      At line 15 in file BLOCK.asm
+Comment: LOOP1 used once
+LOOP2 00000018
+
+Symbol: LOOP2
+   Definitions
+      At line 16 in file BLOCK.asm
+   Uses
+      At line 16 in file BLOCK.asm
+Comment: LOOP2 used once
+Program 00000000
+
+Symbol: Program
+   Definitions
+      At line 6 in file BLOCK.asm
+   Uses
+      None
+Comment: Program unused
+3 symbols
+327 symbols in table
